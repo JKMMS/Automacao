@@ -1,0 +1,2 @@
+# Pasta-Compartilhada---WIN7
+ 
