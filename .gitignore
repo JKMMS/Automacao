@@ -2,3 +2,5 @@
 *.DFR
 *.ci
 *.txt
+*.SDB
+*.SYM
