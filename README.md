@@ -58,7 +58,7 @@ valor máximo também devem ser exibidos no display da IHM
 
 - [x] Fazer o botão de emergência
 
-- [] Adicionar o tempo de 5 segundos que a bomba não pode ser acionada após pressionado o botão de emergência
+- [x] Adicionar o tempo de 5 segundos que a bomba não pode ser acionada após pressionado o botão de emergência
 
 ### Exercício 5
 
@@ -97,21 +97,21 @@ aberta). Ao ser fechada a porta, as lâmpadas permanecem piscando por 5 segundos
 ### Exercício 8
 
 - Um fulão processa o couro através do seguinte procedimento: A partir de um botão de início (entrada digital):
-- [] Inicialmente, preenche-se o fulão com o produto de curtimento, através da válvula VPC.
-- [] O motor é acionado no sentido horário, através da saída MH por um tempo THC.
-- [] O motor é acionado no sentido anti-horário, através da saída MAH, por um tempo TAHC.
-- [] O fulão é esvaziado, através da válvula VD.
-- [] O fulão é preenchido com água, através da válvula VL.
-- [] O motor é acionado no sentido horário, através da saída MH por um tempo THL.
-- [] O motor é acionado no sentido anti-horário, através da saída MAH, por um tempo TAHL.
-- [] O fulão é esvaziado, através da válvula VD.
-- [] É sinalizado, através de uma lâmpada FP, o final do processo.
+- [x] Inicialmente, preenche-se o fulão com o produto de curtimento, através da válvula VPC.
+- [x] O motor é acionado no sentido horário, através da saída MH por um tempo THC.
+- [x] O motor é acionado no sentido anti-horário, através da saída MAH, por um tempo TAHC.
+- [x] O fulão é esvaziado, através da válvula VD.
+- [x] O fulão é preenchido com água, através da válvula VL.
+- [x] O motor é acionado no sentido horário, através da saída MH por um tempo THL.
+- [x] O motor é acionado no sentido anti-horário, através da saída MAH, por um tempo TAHL.
+- [x] O fulão é esvaziado, através da válvula VD.
+- [x] É sinalizado, através de uma lâmpada FP, o final do processo.
+- [x] Exercício finalizado e funcionando certinho, com comentários e IHM
 Após o ciclo completo, o sistema deve ficar pronto para ser acionado novamente. O nível alto do fulão é indicado pela chave de
 nível NVC, e o nível baixo (vazio) é indicado pela chave NVV. Elabore um programa que realize este procedimento, com os 
 seguintes tempos para simulação: THC =TAHC= 5s. THL=TAHL=8s
 Cada fase do processo deve ser devidamente apresentada na tela da IHM através de uma variável de texto.
 
-- Preciso conferir a lógica pq fiquei confusa
 
 ### Exercício 9
 
