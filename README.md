@@ -60,6 +60,87 @@ valor máximo também devem ser exibidos no display da IHM
 
 - [] Adicionar o tempo de 5 segundos que a bomba não pode ser acionada após pressionado o botão de emergência
 
+### Exercício 5
+
+- Faça um programa para inverter uma string dada (armazenar em outra variável, a variável original deve permanecer inalterada).
+Observação:a string deve poder ser modificada, como sendo uma constante do programa. Para o tamanho variável, use a função LEN.
+Execute e apresente apenas em modo de simulação no Mastertool IEC
+
+- [x] Inverter a frase
+
+- [x] Fazer IHM e comentários
+
+### Exercício 6
+
+- A iluminação de uma sala é comandada em 3 pontos diferentes, através de interruptores. Desenvolva um programa que, a cada
+alteração do estado de um dos interruptores, troque o estado da lâmpada, ou seja, cada vez que um dos interruptores é ligado
+ou desligado, a lâmpada acende se estava apagada, ou apaga se estava acesa
+
+- [x] Inverter o estado da lâmpada a cada toque no interruptor
+
+- [x] IHM e comentários
+
+### Exercício 7
+
+- A saída de veículos normalmente é sinalizada por duas lâmpadas, que piscam alternadamente. Elabore um programa que realize
+esta função, a partir da ativação de um sensor de porta de garagem aberta (entrada digital, #0: porta fechada, #1: porta 
+aberta). Ao ser fechada a porta, as lâmpadas permanecem piscando por 5 segundos. Utilize uma frequência de piscada de 2 HZ.
+
+- [x] Fazer as lâmpadas piscarem em 2Hz
+
+- [x] Fazer as lâmpadas começarem a piscar quando a porta abre
+
+- [x] Fazer as lâmpadas piscarem por mais 5 segundos depois que a porta fecha e depois desligarem
+
+- [x] Fazer comentários e IHM
+
+### Exercício 8
+
+- Um fulão processa o couro através do seguinte procedimento: A partir de um botão de início (entrada digital):
+- [] Inicialmente, preenche-se o fulão com o produto de curtimento, através da válvula VPC.
+- [] O motor é acionado no sentido horário, através da saída MH por um tempo THC.
+- [] O motor é acionado no sentido anti-horário, através da saída MAH, por um tempo TAHC.
+- [] O fulão é esvaziado, através da válvula VD.
+- [] O fulão é preenchido com água, através da válvula VL.
+- [] O motor é acionado no sentido horário, através da saída MH por um tempo THL.
+- [] O motor é acionado no sentido anti-horário, através da saída MAH, por um tempo TAHL.
+- [] O fulão é esvaziado, através da válvula VD.
+- [] É sinalizado, através de uma lâmpada FP, o final do processo.
+Após o ciclo completo, o sistema deve ficar pronto para ser acionado novamente. O nível alto do fulão é indicado pela chave de
+nível NVC, e o nível baixo (vazio) é indicado pela chave NVV. Elabore um programa que realize este procedimento, com os 
+seguintes tempos para simulação: THC =TAHC= 5s. THL=TAHL=8s
+Cada fase do processo deve ser devidamente apresentada na tela da IHM através de uma variável de texto.
+
+- Preciso conferir a lógica pq fiquei confusa
+
+### Exercício 9
+
+- Em um estacionamento duas células fotoelétricas distanciadas de 1.5 metros servem para identificar a entrada e saída de
+carros. Quando a célula A é acionada primeiro que a célula B é porque um veículo está entrando. No caso contrário, um veículo 
+está saindo. Se após uma das células ter seu facho de luz bloqueado, a outra não for interrompida, isto significa que uma pessoa
+está passando e o evento deve ser ignorado. Caso o veículo pare diante das duas células e reverta o movimento, não deve haver 
+alteração na contagem. A variável CONTA_VEICULOS indica o número de veículos no estacionamento. Desenvolva um bloco funcional 
+que tenha como entrada a leitura dos sensores fotoelétricos (booleanos) e como saída a contagem de carros na garagem, o número 
+de vagas disponíveis, a sinalização de um semáforo vermelho caso o número de vagas seja igual a MAX_VAGAS, uma constante do 
+programa, e a sinalização de um semáforo verde caso o estacionamento esteja vazio. Utilize a tela da IHM para mostrar as
+informações.
+
+- [x] Fazer a lógica para verificar a entrada de carros
+
+- [x] Fazer o contador de carros
+
+- [x] Fazer o contador de vagas
+
+- [x] Fazer a lógica para ignorar pessoas que passam pelo sensor
+
+- [x] Fazer comentários e IHM
+
+### Exercício 10
+
+- 
+
+
+
 
 
 Trabalho de **Automação** da *Fundação __Liberato__*
