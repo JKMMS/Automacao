@@ -107,6 +107,7 @@ aberta). Ao ser fechada a porta, as lâmpadas permanecem piscando por 5 segundos
 - [x] O fulão é esvaziado, através da válvula VD.
 - [x] É sinalizado, através de uma lâmpada FP, o final do processo.
 - [x] Exercício finalizado e funcionando certinho, com comentários e IHM
+
 Após o ciclo completo, o sistema deve ficar pronto para ser acionado novamente. O nível alto do fulão é indicado pela chave de
 nível NVC, e o nível baixo (vazio) é indicado pela chave NVV. Elabore um programa que realize este procedimento, com os 
 seguintes tempos para simulação: THC =TAHC= 5s. THL=TAHL=8s
@@ -137,7 +138,64 @@ informações.
 
 ### Exercício 10
 
-- 
+- Pode-se medir vazão em um líquido através do sistema de placa de orifício, onde a vazão pode ser calculada pela expressão
+abaixo, sendo Q dado em m3/s:
+Q = C.Ao.v(2.(p1-p2)/d)
+Elabore uma função que, a partir dos valores
+fornecidos, calcule a vazão. Os valores de p2 e p1 são
+as entradas da função, Q é a saída e os demais termos são constantes da função. Teste
+esta função através de um programa, com os seguintes valores:
+C= 0,68
+d= 1000,00 kgf/m3
+diâmetro do orifício :29,75 mm => Ao
+p1 = 201,00 kPa
+p2 = 154,00 kPa (Q=144,92x10-6m3/s)
+Agora, utilize as duas entradas analógicas do CP como entradas dos valores de pressão,
+com fundo de escala de 20.000, correspondendo a 200,00 kPa. Apresente os valores das
+pressões, em kPa, e a vazão calculada, em m3/s (com precisão máxima) e em l/m, na tela
+da IHM. (demais valores com dois algarismos significativos após a vírgula)
+
+- [x] Fazer a função para calcular a vasão
+
+- [x] Testar se está funcionando com o valor do sor
+
+- [ ] Fazer funcionar quando P2 for maior que P1 e der um valor negativo na raiz
+
+### Exercício 11
+
+- Crie uma estrutura de dados que armazene o valor obtido por um determinado tipo de sensor, o valor de saída da variável
+medida convertido na escala, o fator de conversão de escala, limites máximo e mínimo para o valor desta variável e dois sinais 
+booleanos indicando alarme de mínimo e alarme de máximo. Elabore um bloco funcional que calcula o valor de saída a partir do 
+valor do sensor dado (lendo a entrada analógica, tensão de 0,00V a 10,00V), e atualize os alarmes de máximo e mínimo. 
+
+Crie um array com 10 elementos desta estrutura. Os limites de máximo e mínimo em cada elemento são aleatórios e de sua escolha. 
+Elabore um programa que processe estes dados através do bloco funcional elaborado (que possa processar cada um dos sensores, de
+1 a 10), e onde possa ser escolhido, através da IHM, qual o sensor terá seus dados processados e exibidos na tela.
+
+### Exercício 12
+
+- Desenvolver um sistema de gerenciamento de uma bomba de circulação de produto químico, em três tanques.
+
+Existe um LSH (sensor de nível alto) e um LSL (sensor de nível baixo) para cada tanque. 6VAR
+
+Para ligar a bomba (K2), nenhum dos tanques deve estar com o nível alto e o operador deve dar partida por um botão B1, podendo desligá-la pelo botão B2. 
+Se o nível dentro de um dos tanques subir ao limite superior, a bomba desliga. 
+
+Se o nível de um dos tanques atingir o limite mínimo, e nenhum dos outros tanques estiver no limite máximo, deve ser ligada a bomba K2 
+e ligada a saída de alarme visual e sonoro (K1), ficando esse alarme ativo por 5 segundos . 
+
+Crie uma estrutura para de dados para os tanques, contendo uma variável de medição do nível de concentração do produto (REAL) e duas 
+variáveis de contagem (INT) dos eventos de nível máximo atingido, nível mínimo atingido (ambos de cada tanque), e de acionamentos da bomba (do sistema), 
+crie um array contendo as estruturas de dados dos três tanques. 
+
+A leitura de concentração para os três tanques é feita por sensores/transmissores analógicos (AT) que utilizam uma única entrada analógica (valor de 0,00UI 
+a 50,00UI, fundo de escala 10.000) selecionada a cada 5 segundos para a leitura de cada tanque e respectiva atualização do dado no array de tanques 
+(intervalo de 5s, mede tanque 1, intervalo de 5s, mede tanque 2, intervalo de 5s, mede tanque 3, e assim sucessivamente). 
+
+Exibir na tela principal da IHM o status da bomba, do alarme e da medição atualizada dos três tanques), em uma segunda tela, exibir os contadores de eventos 
+atualizados dos três tanques. Ao ser reiniciado o CLP, todas as variáveis retornam ao valor inicial “zero”.
+
+
 
 
 
