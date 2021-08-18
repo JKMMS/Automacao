@@ -178,52 +178,60 @@ Elabore um programa que processe estes dados através do bloco funcional elabora
 
 Existe um LSH (sensor de nível alto) e um LSL (sensor de nível baixo) para cada tanque. 6VAR
 
-Para ligar a bomba (K2), nenhum dos tanques deve estar com o nível alto e o operador deve dar partida por um botão B1, podendo desligá-la pelo botão B2. 
-Se o nível dentro de um dos tanques subir ao limite superior, a bomba desliga. 
+Para ligar a bomba (K2), nenhum dos tanques deve estar com o nível alto e o operador deve dar partida por um botão B1, podendo desligá-la pelo botão B2.
+Se o nível dentro de um dos tanques subir ao limite superior, a bomba desliga.
 
-Se o nível de um dos tanques atingir o limite mínimo, e nenhum dos outros tanques estiver no limite máximo, deve ser ligada a bomba K2 
-e ligada a saída de alarme visual e sonoro (K1), ficando esse alarme ativo por 5 segundos . 
+Se o nível de um dos tanques atingir o limite mínimo, e nenhum dos outros tanques estiver no limite máximo, deve ser ligada a bomba K2
+e ligada a saída de alarme visual e sonoro (K1), ficando esse alarme ativo por 5 segundos .
 
-Crie uma estrutura para de dados para os tanques, contendo uma variável de medição do nível de concentração do produto (REAL) e duas 
-variáveis de contagem (INT) dos eventos de nível máximo atingido, nível mínimo atingido (ambos de cada tanque), e de acionamentos da bomba (do sistema), 
-crie um array contendo as estruturas de dados dos três tanques. 
+Crie uma estrutura para de dados para os tanques, contendo uma variável de medição do nível de concentração do produto (REAL) e duas
+variáveis de contagem (INT) dos eventos de nível máximo atingido, nível mínimo atingido (ambos de cada tanque), e de acionamentos da bomba (do sistema),
+crie um array contendo as estruturas de dados dos três tanques.
 
-A leitura de concentração para os três tanques é feita por sensores/transmissores analógicos (AT) que utilizam uma única entrada analógica (valor de 0,00UI 
-a 50,00UI, fundo de escala 10.000) selecionada a cada 5 segundos para a leitura de cada tanque e respectiva atualização do dado no array de tanques 
-(intervalo de 5s, mede tanque 1, intervalo de 5s, mede tanque 2, intervalo de 5s, mede tanque 3, e assim sucessivamente). 
+A leitura de concentração para os três tanques é feita por sensores/transmissores analógicos (AT) que utilizam uma única entrada
+analógica (valor de 0,00UI a 50,00UI, fundo de escala 10.000) selecionada a cada 5 segundos para a leitura de cada tanque e respectiva
+atualização do dado no array de tanques(intervalo de 5s, mede tanque 1, intervalo de 5s, mede tanque 2, intervalo de 5s, mede tanque 3,
+e assim sucessivamente).
 
-Exibir na tela principal da IHM o status da bomba, do alarme e da medição atualizada dos três tanques), em uma segunda tela, exibir os contadores de eventos 
-atualizados dos três tanques. Ao ser reiniciado o CLP, todas as variáveis retornam ao valor inicial “zero”.
+Exibir na tela principal da IHM o status da bomba, do alarme e da medição atualizada dos três tanques), em uma segunda tela,
+exibir os contadores de eventos atualizados dos três tanques.
+Ao ser reiniciado o CLP, todas as variáveis retornam ao valor inicial “zero”.
 
-- [ ] Três sensores LSH - Sensor de nível alto
+- [ ] Partida
+  - [ ] A bomba K2 liga quando nenhum nível alto está acionado
 
-- [ ] Três sensores LSL - Sensor de nível baixo
+  - [ ] Partida com o botão B1
 
-- [ ] A bomba K2 liga quando nenhum nível alto está acionado
+  - [ ] A bomba K2 liga quando algum tanque chega no mínimo e nenhum outro está no máximo e liga um alarme VISUAL e SONORO
+    - [ ] O alarme fica ativo por 5 segundos
 
-- [ ] Partida com o botão B1
+- [ ] Parada
+  - [ ] Parada com o botão B2
 
-- [ ] Parada com o botão B2
-
-- [ ] A bomba K2 desliga quando algum tanque chega no nível máximo
-
-- [ ] A bomba K2 liga quando algum tanque chega no mínimo e nenhum outro está no máximo e liga um alarme VISUAL e SONORO
-
-- [ ] O alarme fica ativo por 5 segundos
+  - [ ] A bomba K2 desliga quando algum tanque chega no nível máximo
 
 - [ ] Estrutura que contém os dados de todos os tanques
+  - [ ] Sensor LSH - Sensor de nível alto
+
+  - [ ] Sensor LSL - Sensor de nível baixo
+
+  - [ ] Contadores:
+    - [ ] Nível de concentração (REAL)
+
+    - [ ] Contagem de nível máximo atingido (INT)
+
+    - [ ] Contagem de nível mínimo atingido (INT)
+
+    - [ ] Contagem acionamentos da bomba (INT)
 
 - [ ] Fazer a leitura dos tanques com um sensor/transmissor analógico (AT) de 0,00UI a 50,00UI com fundo de escala de 10.000
 
-- [ ] Selecionar a cada 5 segundos a exibição dos dados de um dos tanques
+  - [ ] A cada 5 segundos troca de tanque
 
 - [ ] Fazer a IHM com o status da bomba, alarme e medição atualizada dos três tanques
 
 - [ ] Fazer uma segunda tela que exibe o contador dos eventos dos três tanques
 
 - [ ] As variáveis retornam a zero ao ser reiniciado o programa
-
-
-
 
 Trabalho de **Automação** da *Fundação __Liberato__*
