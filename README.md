@@ -195,8 +195,33 @@ a 50,00UI, fundo de escala 10.000) selecionada a cada 5 segundos para a leitura 
 Exibir na tela principal da IHM o status da bomba, do alarme e da medição atualizada dos três tanques), em uma segunda tela, exibir os contadores de eventos 
 atualizados dos três tanques. Ao ser reiniciado o CLP, todas as variáveis retornam ao valor inicial “zero”.
 
+- [ ] Três sensores LSH - Sensor de nível alto
 
+- [ ] Três sensores LSL - Sensor de nível baixo
 
+- [ ] A bomba K2 liga quando nenhum nível alto está acionado
+
+- [ ] Partida com o botão B1
+
+- [ ] Parada com o botão B2
+
+- [ ] A bomba K2 desliga quando algum tanque chega no nível máximo
+
+- [ ] A bomba K2 liga quando algum tanque chega no mínimo e nenhum outro está no máximo e liga um alarme VISUAL e SONORO
+
+- [ ] O alarme fica ativo por 5 segundos
+
+- [ ] Estrutura que contém os dados de todos os tanques
+
+- [ ] Fazer a leitura dos tanques com um sensor/transmissor analógico (AT) de 0,00UI a 50,00UI com fundo de escala de 10.000
+
+- [ ] Selecionar a cada 5 segundos a exibição dos dados de um dos tanques
+
+- [ ] Fazer a IHM com o status da bomba, alarme e medição atualizada dos três tanques
+
+- [ ] Fazer uma segunda tela que exibe o contador dos eventos dos três tanques
+
+- [ ] As variáveis retornam a zero ao ser reiniciado o programa
 
 
 
