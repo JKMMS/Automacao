@@ -233,4 +233,15 @@ Ao ser reiniciado o CLP, todas as variáveis retornam ao valor inicial “zero�
 
 - [x] As variáveis retornam a zero ao ser reiniciado o programa
 
+
+### Problemas para resolver:
+
+- [ ] O case não está funcionando
+
+- [x] A variável M começa ligada, mas zera assim que inicia o programa e não deixa o TON começar a contar
+
+- [ ] Usar uma borda de subida para detectar quando um dos sensores é acionado, pois se não fica contando infinitamente até desligar
+
+- [ ] 
+
 Trabalho de **Automação** da *Fundação __Liberato__*
