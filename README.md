@@ -197,18 +197,17 @@ Exibir na tela principal da IHM o status da bomba, do alarme e da medição atua
 exibir os contadores de eventos atualizados dos três tanques.
 Ao ser reiniciado o CLP, todas as variáveis retornam ao valor inicial “zero”.
 
-- [ ] Partida
-  - [ ] A bomba K2 liga quando nenhum nível alto está acionado
+- [x] Partida
+  - [x] Partida com o botão B1
+    - [x] A bomba K2 liga quando nenhum nível alto está acionado
 
-  - [ ] Partida com o botão B1
+  - [x] A bomba K2 liga quando algum tanque chega no mínimo e nenhum outro está no máximo e liga um alarme VISUAL e SONORO
+    - [x] O alarme fica ativo por 5 segundos
 
-  - [ ] A bomba K2 liga quando algum tanque chega no mínimo e nenhum outro está no máximo e liga um alarme VISUAL e SONORO
-    - [ ] O alarme fica ativo por 5 segundos
+- [x] Parada
+  - [x] Parada com o botão B2
 
-- [ ] Parada
-  - [ ] Parada com o botão B2
-
-  - [ ] A bomba K2 desliga quando algum tanque chega no nível máximo
+  - [x] A bomba K2 desliga quando algum tanque chega no nível máximo
 
 - [x] Estrutura que contém os dados de todos os tanques
   - [x] Sensor LSH - Sensor de nível alto
@@ -224,14 +223,14 @@ Ao ser reiniciado o CLP, todas as variáveis retornam ao valor inicial “zero�
 
     - [x] Contagem acionamentos da bomba (INT)
 
-- [ ] Fazer a leitura dos tanques com um sensor/transmissor analógico (AT) de 0,00UI a 50,00UI com fundo de escala de 10.000
+- [x] Fazer a leitura dos tanques com um sensor/transmissor analógico (AT) de 0,00UI a 50,00UI com fundo de escala de 10.000
 
-  - [ ] A cada 5 segundos troca de tanque
+  - [x] A cada 5 segundos troca de tanque
 
 - [ ] Fazer a IHM com o status da bomba, alarme e medição atualizada dos três tanques
 
 - [ ] Fazer uma segunda tela que exibe o contador dos eventos dos três tanques
 
-- [ ] As variáveis retornam a zero ao ser reiniciado o programa
+- [x] As variáveis retornam a zero ao ser reiniciado o programa
 
 Trabalho de **Automação** da *Fundação __Liberato__*
