@@ -210,19 +210,19 @@ Ao ser reiniciado o CLP, todas as variáveis retornam ao valor inicial “zero�
 
   - [ ] A bomba K2 desliga quando algum tanque chega no nível máximo
 
-- [ ] Estrutura que contém os dados de todos os tanques
-  - [ ] Sensor LSH - Sensor de nível alto
+- [x] Estrutura que contém os dados de todos os tanques
+  - [x] Sensor LSH - Sensor de nível alto
 
-  - [ ] Sensor LSL - Sensor de nível baixo
+  - [x] Sensor LSL - Sensor de nível baixo
 
-  - [ ] Contadores:
-    - [ ] Nível de concentração (REAL)
+  - [x] Contadores:
+    - [x] Nível de concentração (REAL)
 
-    - [ ] Contagem de nível máximo atingido (INT)
+    - [x] Contagem de nível máximo atingido (INT)
 
-    - [ ] Contagem de nível mínimo atingido (INT)
+    - [x] Contagem de nível mínimo atingido (INT)
 
-    - [ ] Contagem acionamentos da bomba (INT)
+    - [x] Contagem acionamentos da bomba (INT)
 
 - [ ] Fazer a leitura dos tanques com um sensor/transmissor analógico (AT) de 0,00UI a 50,00UI com fundo de escala de 10.000
 
