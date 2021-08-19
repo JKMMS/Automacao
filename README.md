@@ -236,11 +236,13 @@ Ao ser reiniciado o CLP, todas as variáveis retornam ao valor inicial “zero�
 
 ### Problemas para resolver:
 
-- [ ] O case não está funcionando
+- [x] O case não está funcionando - substituí por IF ELSE
 
 - [x] A variável M começa ligada, mas zera assim que inicia o programa e não deixa o TON começar a contar
 
-- [ ] Usar uma borda de subida para detectar quando um dos sensores é acionado, pois se não fica contando infinitamente até desligar
+- [x] Usar uma borda de subida para detectar quando um dos sensores é acionado, pois se não fica contando infinitamente até desligar
+
+- [x] Fazer o alarme visual e sonoro ficar ativo somente por 5 segundos
 
 - [ ] 
 
