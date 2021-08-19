@@ -244,6 +244,5 @@ Ao ser reiniciado o CLP, todas as variáveis retornam ao valor inicial “zero�
 
 - [x] Fazer o alarme visual e sonoro ficar ativo somente por 5 segundos
 
-- [ ] 
 
 Trabalho de **Automação** da *Fundação __Liberato__*
